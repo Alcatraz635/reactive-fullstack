@@ -1,0 +1,74 @@
+.page_header {
+  color: teal;
+  text-align: center;
+}
+
+.todo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+
+  &_item {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 200px;
+    -webkit-appearance: textfield;
+    background-color: teal;
+    cursor: pointer;
+    color: white;
+    -webkit-rtl-ordering: logical;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    -o-border-image: initial;
+    border-image: initial;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+
+    &:hover {
+      color: teal;
+      background-color: white;
+    }
+  }
+
+  &_new {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 200px;
+
+    &--submit {
+      padding: 0.5em;
+      font-size: 1em;
+      width: 220px;
+      color: white;
+      background-color: teal;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+
+      &[disabled] {
+        background-color: grey;
+        color: black;
+      }
+    }
+  }
+
+  &_search {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 200px;
+  }
+}
